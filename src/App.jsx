@@ -37,14 +37,6 @@ const portfolioData = {
       repoLink: "https://github.com/yourusername/monitoring-stack",
       tags: ["Monitoring", "Prometheus", "Grafana", "Docker", "Python", "Observability"],
     },
-    {
-      id: 3,
-      title: "Monitoring with Prometheus & Grafana",
-      description: "Set up real-time monitoring for Dockerized applications. Implemented custom Python exporters, configured Prometheus for metrics scraping, and built insightful dashboards in Grafana.",
-      link: "https://github.com/yourusername/monitoring-stack",
-      repoLink: "https://github.com/yourusername/monitoring-stack",
-      tags: ["Monitoring", "Prometheus", "Grafana", "Docker", "Python", "Observability"],
-    },
   ],
   skills: [
     { name: "Docker", icon: <SiDocker /> },
@@ -61,11 +53,11 @@ const portfolioData = {
     { name: "Postman/Newman", icon: <SiPostman /> },
   ],
   education: [
-  // {
-  //   degree: "Master of Technology in Cybersecurity and Information Assurance",
-  //   institution: "University of Central Missouri, Lee's Summit, MO", 
-  //   year: "2025",
-  // },
+    {
+    degree: "Master of Technology in Cybersecurity and Information Assurance",
+    institution: "University of Central Missouri, Lee's Summit, MO", 
+        year: "2025",
+    },
     {
       degree: "Bachelor of Technology in Computer Science",
       institution: "Jawaharlal Nehru Technological University, Hyderabad",
