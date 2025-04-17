@@ -1,0 +1,39 @@
+name: Build & Deploy Portfolio
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm install --legacy-peer-deps
+
+    - name: Configure Git user
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "GitHub Actions Bot"
+
+    - name: Clean old build
+      run: rm -rf dist
+
+    - name: Build the site
+      run: npm run build
+
+    - name: Deploy to GitHub Pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.Token }}
+      run: |
+        npx gh-pages -d dist -u "github-actions-bot <action@github.com>" -r https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+
