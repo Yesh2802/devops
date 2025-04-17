@@ -66,8 +66,8 @@ const portfolioData = {
   ],
   certifications: [
     {
-      name: "Certified Kubernetes Administrator (CKA)",
-      issuer: "CNCF",
+      name: "Microsoft Technology Associate",
+      issuer: "Microsoft",
       year: "2023",
     },
   ],
