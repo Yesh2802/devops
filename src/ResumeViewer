@@ -1,0 +1,14 @@
+const ResumeViewer = () => {
+    return (
+      <div className="h-screen w-full flex items-center justify-center bg-gray-900">
+        <iframe
+          src="DevOPS.pdf"
+          title="Yeshwanth Kanukuntla Resume"
+          className="w-11/12 h-[90%] border-2 border-blue-500 rounded-lg shadow-lg"
+        ></iframe>
+      </div>
+    );
+  };
+  
+  export default ResumeViewer;
+  
