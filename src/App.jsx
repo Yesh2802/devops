@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf, FaExternalLinkAlt, FaChevronDown, FaChevronUp } from 'react-icons/fa';
-import { SiKubernetes, SiDocker, SiTerraform, SiAnsible, SiPython, SiJenkins, SiGithubactions, SiPrometheus, SiGrafana, SiElastic, SiVault, SiPostman } from 'react-icons/si';
+import { VscAzure } from 'react-icons/vsc'
+import { FaAws,FaGithub, FaLinkedin, FaEnvelope, FaFilePdf, FaExternalLinkAlt, FaChevronDown, FaChevronUp, FaJava, FaAccessibleIcon } from 'react-icons/fa';
+import { SiJira, SiCplusplus, SiPytest, SiCypress, SiSelenium, SiGnubash, SiJavascript, SiKubernetes, SiDocker, SiTerraform, SiAnsible, SiPython, SiJenkins, SiGithubactions, SiPrometheus, SiGrafana, SiElastic, SiVault, SiPostman, } from 'react-icons/si';
 // --- Data ---
 const portfolioData = {
   name: "Yeshwanth Kanukuntla",
@@ -33,24 +34,43 @@ const portfolioData = {
       id: 3,
       title: "Monitoring with Prometheus & Grafana",
       description: "Set up real-time monitoring for Dockerized applications. Implemented custom Python exporters, configured Prometheus for metrics scraping, and built insightful dashboards in Grafana.",
-      link: "https://github.com/yourusername/monitoring-stack",
-      repoLink: "https://github.com/yourusername/monitoring-stack",
+      link: "https://github.com/Yesh2802/Prometheus-Grafana-Monitoring",
+      repoLink: "https://github.com/Yesh2802/Prometheus-Grafana-Monitoring",
       tags: ["Monitoring", "Prometheus", "Grafana", "Docker", "Python", "Observability"],
-    },
+      },
+      {
+          id: 4,
+          title: "DevOps Portfolio",
+          description: "Devops portfolio project demonstrates the deployment of a React application using Vite for efficient development and build processes. It includes configurations for ESLint to maintain code quality and Tailwind CSS for styling. The setup showcases modern front-end development practices, emphasizing performance and maintainability.",
+          link: "https://github.com/Yesh2802/devops",
+          repoLink: "https://github.com/Yesh2802/devops",
+          tags: ["React", "Vite", "JavaScript","Tailwind CSS", "ESLint","PostCSS","HTML","GitHub Actions"],
+      },
   ],
-  skills: [
-    { name: "Docker", icon: <SiDocker /> },
+    skills: [
+    { name: "Python", icon: <SiPython /> },
+    { name: "JavaScript", icon: <SiJavascript /> },
+        { name: "Java", icon: <FaJava /> },
+        { name: "C++", icon: <SiCplusplus /> },
+        { name: "Bash", icon: <SiGnubash /> },
+        { name: "Azure", icon: <VscAzure /> },
+        { name: "AWS", icon: <FaAws /> },
+        { name: "Docker", icon: <SiDocker /> },
     { name: "Kubernetes", icon: <SiKubernetes /> },
     { name: "Terraform", icon: <SiTerraform /> },
     { name: "Ansible", icon: <SiAnsible /> },
     { name: "Jenkins", icon: <SiJenkins /> },
     { name: "GitHub Actions", icon: <SiGithubactions /> },
-    { name: "Python", icon: <SiPython /> },
     { name: "Prometheus", icon: <SiPrometheus /> },
     { name: "Grafana", icon: <SiGrafana /> },
     { name: "ELK Stack", icon: <SiElastic /> },
     { name: "Vault", icon: <SiVault /> },
-    { name: "Postman/Newman", icon: <SiPostman /> },
+        { name: "Postman/Newman", icon: <SiPostman /> },
+        { name: "Selenium", icon: <SiSelenium /> },
+        { name: "Cypress", icon: <SiCypress /> },
+        { name: "PyTest", icon: <SiPytest /> },
+        { name: "Jira", icon: <SiJira /> },
+        
   ],
   education: [
     {
@@ -174,7 +194,10 @@ function Accordion({ title, children }) {
 
 // --- Main Portfolio Component ---
 export default function DevOpsPortfolio() {
-  const { name, title, bio, contact, projects, skills, education, certifications } = portfolioData;
+    const { name, title, bio, contact, projects, skills, education, certifications } = portfolioData;
+    const [showAllProjects, setShowAllProjects] = useState(false);
+
+    const displayedProjects = showAllProjects ? projects : projects.slice(0, 3);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white font-mono p-6 md:p-12 lg:p-16">
@@ -205,20 +228,31 @@ export default function DevOpsPortfolio() {
           </p>
         </Section>
 
-        <Section title="Featured Projects" id="projects">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <ProjectCard
-                key={project.id}
-                title={project.title}
-                description={project.description}
-                link={project.link}
-                repoLink={project.repoLink}
-                tags={project.tags}
-              />
-            ))}
-          </div>
-        </Section>
+              <Section title="Featured Projects" id="projects">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {displayedProjects.map((project) => (
+                          <ProjectCard key={project.id} {...project} />
+                      ))}
+                  </div>
+                  {projects.length > 3 && (
+                      <div className="text-center mt-6">
+                          <button
+                              onClick={() => setShowAllProjects(!showAllProjects)}
+                              className="text-blue-400 hover:text-blue-300 text-sm flex items-center justify-center mx-auto"
+                          >
+                              {showAllProjects ? (
+                                  <>
+                                      <FaChevronUp className="mr-2" /> Show Less
+                                  </>
+                              ) : (
+                                  <>
+                                      <FaChevronDown className="mr-2" /> Show More
+                                  </>
+                              )}
+                          </button>
+                      </div>
+                  )}
+              </Section>
 
         <Section title="Tools & Technologies" id="skills">
           <ul className="flex flex-wrap gap-4">
