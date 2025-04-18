@@ -282,13 +282,16 @@ export default function DevOpsPortfolio() {
                 </header>
 
                 {/* Removed the simple "About Me" section as the header bio serves a similar purpose, but you can add it back if you prefer */}
-                {/*
+                {
         <Section title="About Me" id="about">
-          <p className="text-gray-300 text-lg font-sans">
-            Welcome to my portfolio! I am an aspiring DevOps Engineer with a passion for automating infrastructure, streamlining deployment pipelines, and ensuring system reliability using cloud-native technologies and best practices.
+                        <p className="text-gray-300 text-lg text-justify font-sans">
+                            I'm a results-driven Cloud & DevOps Engineer with a passion for automating infrastructure, enhancing system reliability, and accelerating software delivery. As a graduate student with hands-on experience, I specialize in building secure, scalable DevOps solutions using Kubernetes, Docker, Terraform, and cloud platforms like AWS and Azure.
+                        </p>
+                        <p className="text-gray-300 text-lg text-justify font-sans">
+                            My strengths include architecting CI/CD pipelines, managing infrastructure as code, and implementing end-to-end monitoring with Prometheus and Grafana. I focus on bridging development and operations through automation, observability, and a performance-first mindset.
           </p>
         </Section>
-        */}
+        }
 
                 <Section title="Tools & Technologies" id="skills">
                     <ul className="flex flex-wrap gap-4">
