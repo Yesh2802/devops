@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf, FaExternalLinkAlt, FaChevronDown, FaChevronUp } from 'react-icons/fa';
-import { SiKubernetes, SiDocker, SiTerraform, SiAnsible, SiPython, SiJenkins, SiGithubactions, SiPrometheus, SiGrafana, SiElastic, SiVault, SiPostman } from 'react-icons/si';
+import { VscAzure } from 'react-icons/vsc'
+import { FaAws,FaGithub, FaLinkedin, FaEnvelope, FaFilePdf, FaExternalLinkAlt, FaChevronDown, FaChevronUp, FaJava, FaAccessibleIcon } from 'react-icons/fa';
+import { SiJira, SiCplusplus, SiPytest, SiCypress, SiSelenium, SiGnubash, SiJavascript, SiKubernetes, SiDocker, SiTerraform, SiAnsible, SiPython, SiJenkins, SiGithubactions, SiPrometheus, SiGrafana, SiElastic, SiVault, SiPostman, } from 'react-icons/si';
 // --- Data ---
 const portfolioData = {
   name: "Yeshwanth Kanukuntla",
@@ -33,32 +34,43 @@ const portfolioData = {
       id: 3,
       title: "Monitoring with Prometheus & Grafana",
       description: "Set up real-time monitoring for Dockerized applications. Implemented custom Python exporters, configured Prometheus for metrics scraping, and built insightful dashboards in Grafana.",
-      link: "https://github.com/yourusername/monitoring-stack",
-      repoLink: "https://github.com/yourusername/monitoring-stack",
+      link: "https://github.com/Yesh2802/Prometheus-Grafana-Monitoring",
+      repoLink: "https://github.com/Yesh2802/Prometheus-Grafana-Monitoring",
       tags: ["Monitoring", "Prometheus", "Grafana", "Docker", "Python", "Observability"],
       },
       {
           id: 4,
-          title: "Monitoring with Prometheus & Grafana",
-          description: "Set up real-time monitoring for Dockerized applications. Implemented custom Python exporters, configured Prometheus for metrics scraping, and built insightful dashboards in Grafana.",
-          link: "https://github.com/yourusername/monitoring-stack",
-          repoLink: "https://github.com/yourusername/monitoring-stack",
-          tags: ["Monitoring", "Prometheus", "Grafana", "Docker", "Python", "Observability"],
+          title: "DevOps Portfolio",
+          description: "Devops portfolio project demonstrates the deployment of a React application using Vite for efficient development and build processes. It includes configurations for ESLint to maintain code quality and Tailwind CSS for styling. The setup showcases modern front-end development practices, emphasizing performance and maintainability.",
+          link: "https://github.com/Yesh2802/devops",
+          repoLink: "https://github.com/Yesh2802/devops",
+          tags: ["React", "Vite", "JavaScript","Tailwind CSS", "ESLint","PostCSS","HTML","GitHub Actions"],
       },
   ],
-  skills: [
-    { name: "Docker", icon: <SiDocker /> },
+    skills: [
+    { name: "Python", icon: <SiPython /> },
+    { name: "JavaScript", icon: <SiJavascript /> },
+        { name: "Java", icon: <FaJava /> },
+        { name: "C++", icon: <SiCplusplus /> },
+        { name: "Bash", icon: <SiGnubash /> },
+        { name: "Azure", icon: <VscAzure /> },
+        { name: "AWS", icon: <FaAws /> },
+        { name: "Docker", icon: <SiDocker /> },
     { name: "Kubernetes", icon: <SiKubernetes /> },
     { name: "Terraform", icon: <SiTerraform /> },
     { name: "Ansible", icon: <SiAnsible /> },
     { name: "Jenkins", icon: <SiJenkins /> },
     { name: "GitHub Actions", icon: <SiGithubactions /> },
-    { name: "Python", icon: <SiPython /> },
     { name: "Prometheus", icon: <SiPrometheus /> },
     { name: "Grafana", icon: <SiGrafana /> },
     { name: "ELK Stack", icon: <SiElastic /> },
     { name: "Vault", icon: <SiVault /> },
-    { name: "Postman/Newman", icon: <SiPostman /> },
+        { name: "Postman/Newman", icon: <SiPostman /> },
+        { name: "Selenium", icon: <SiSelenium /> },
+        { name: "Cypress", icon: <SiCypress /> },
+        { name: "PyTest", icon: <SiPytest /> },
+        { name: "Jira", icon: <SiJira /> },
+        
   ],
   education: [
     {
