@@ -83,7 +83,6 @@ const portfolioData = {
             description: [
                 "Developed and executed manual and automated test cases for cloud-hosted applications, ensuring functionality and reliability.",
                 "Implemented CI/CD pipelines using Jenkins and GitHub Actions to streamline deployments.",
-                "Helped maintain course materials and online resources.",
                 "Collaborated with security and application teams to integrate security best practices in the testing framework.",
                 "Implemented PowerShell scripts to automate configuration management and improve cloud security policies.",
 
