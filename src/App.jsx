@@ -12,7 +12,7 @@ const portfolioData = {
         email: "yeshwanthkanukuntla@gmail.com",
         linkedin: "https://linkedin.com/in/kyeshwanth2802",
         github: "https://github.com/yesh2802",
-        resumePdf: "/devops/DevOPS.pdf",
+        resumePdf: "/public/DevOPS.pdf",
     },
     skills: [
         { name: "Python", icon: <SiPython /> },
