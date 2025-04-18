@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { VscAzure } from 'react-icons/vsc';
+import { IoMdDocument } from 'react-icons/io';
 import { FaAws, FaGithub, FaLinkedin, FaEnvelope, FaFilePdf, FaExternalLinkAlt, FaChevronDown, FaChevronUp, FaJava } from 'react-icons/fa'; // Removed FaAccessibleIcon as it wasn't used
 import { SiJira, SiCplusplus, SiPytest, SiCypress, SiSelenium, SiGnubash, SiJavascript, SiKubernetes, SiDocker, SiTerraform, SiAnsible, SiPython, SiJenkins, SiGithubactions, SiPrometheus, SiGrafana, SiElastic, SiVault, SiPostman, } from 'react-icons/si';
 
@@ -268,7 +269,7 @@ export default function DevOpsPortfolio() {
                         <a href={`mailto:${contact.email}`} className="text-gray-400 hover:text-white transition-colors duration-200" aria-label="Send Email">
                             <FaEnvelope size={24} />
                         </a>
-                        {/* Optional: Add Resume link icon here too if desired */}
+                        {/*Document Icon*/}
                         <a
                             href={contact.resumePdf}
                             target="_blank" // Open PDF in new tab is often better than download
@@ -276,7 +277,7 @@ export default function DevOpsPortfolio() {
                             className="text-gray-400 hover:text-white transition-colors duration-200"
                             aria-label="View Resume PDF"
                         >
-                            <FaFilePdf size={24} />
+                            <IoMdDocument size={24} />
                         </a>
                     </div>
                 </header>
