@@ -36,7 +36,15 @@ const portfolioData = {
       link: "https://github.com/yourusername/monitoring-stack",
       repoLink: "https://github.com/yourusername/monitoring-stack",
       tags: ["Monitoring", "Prometheus", "Grafana", "Docker", "Python", "Observability"],
-    },
+      },
+      {
+          id: 4,
+          title: "Monitoring with Prometheus & Grafana",
+          description: "Set up real-time monitoring for Dockerized applications. Implemented custom Python exporters, configured Prometheus for metrics scraping, and built insightful dashboards in Grafana.",
+          link: "https://github.com/yourusername/monitoring-stack",
+          repoLink: "https://github.com/yourusername/monitoring-stack",
+          tags: ["Monitoring", "Prometheus", "Grafana", "Docker", "Python", "Observability"],
+      },
   ],
   skills: [
     { name: "Docker", icon: <SiDocker /> },
@@ -174,7 +182,10 @@ function Accordion({ title, children }) {
 
 // --- Main Portfolio Component ---
 export default function DevOpsPortfolio() {
-  const { name, title, bio, contact, projects, skills, education, certifications } = portfolioData;
+    const { name, title, bio, contact, projects, skills, education, certifications } = portfolioData;
+    const [showAllProjects, setShowAllProjects] = useState(false);
+
+    const displayedProjects = showAllProjects ? projects : projects.slice(0, 3);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white font-mono p-6 md:p-12 lg:p-16">
@@ -205,20 +216,31 @@ export default function DevOpsPortfolio() {
           </p>
         </Section>
 
-        <Section title="Featured Projects" id="projects">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <ProjectCard
-                key={project.id}
-                title={project.title}
-                description={project.description}
-                link={project.link}
-                repoLink={project.repoLink}
-                tags={project.tags}
-              />
-            ))}
-          </div>
-        </Section>
+              <Section title="Featured Projects" id="projects">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {displayedProjects.map((project) => (
+                          <ProjectCard key={project.id} {...project} />
+                      ))}
+                  </div>
+                  {projects.length > 3 && (
+                      <div className="text-center mt-6">
+                          <button
+                              onClick={() => setShowAllProjects(!showAllProjects)}
+                              className="text-blue-400 hover:text-blue-300 text-sm flex items-center justify-center mx-auto"
+                          >
+                              {showAllProjects ? (
+                                  <>
+                                      <FaChevronUp className="mr-2" /> Show Less
+                                  </>
+                              ) : (
+                                  <>
+                                      <FaChevronDown className="mr-2" /> Show More
+                                  </>
+                              )}
+                          </button>
+                      </div>
+                  )}
+              </Section>
 
         <Section title="Tools & Technologies" id="skills">
           <ul className="flex flex-wrap gap-4">
