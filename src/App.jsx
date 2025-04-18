@@ -12,7 +12,32 @@ const portfolioData = {
     linkedin: "https://linkedin.com/in/kyeshwanth2802",
     github: "https://github.com/yesh2802",
     resumePdf: "/resume.pdf",
-  },
+    },
+    skills: [
+        { name: "Python", icon: <SiPython /> },
+        { name: "JavaScript", icon: <SiJavascript /> },
+        { name: "Java", icon: <FaJava /> },
+        { name: "C++", icon: <SiCplusplus /> },
+        { name: "Bash", icon: <SiGnubash /> },
+        { name: "Azure", icon: <VscAzure /> },
+        { name: "AWS", icon: <FaAws /> },
+        { name: "Docker", icon: <SiDocker /> },
+        { name: "Kubernetes", icon: <SiKubernetes /> },
+        { name: "Terraform", icon: <SiTerraform /> },
+        { name: "Ansible", icon: <SiAnsible /> },
+        { name: "Jenkins", icon: <SiJenkins /> },
+        { name: "GitHub Actions", icon: <SiGithubactions /> },
+        { name: "Prometheus", icon: <SiPrometheus /> },
+        { name: "Grafana", icon: <SiGrafana /> },
+        { name: "ELK Stack", icon: <SiElastic /> },
+        { name: "Vault", icon: <SiVault /> },
+        { name: "Postman", icon: <SiPostman /> },
+        { name: "Selenium", icon: <SiSelenium /> },
+        { name: "Cypress", icon: <SiCypress /> },
+        { name: "PyTest", icon: <SiPytest /> },
+        { name: "Jira", icon: <SiJira /> },
+
+    ],
   projects: [
     {
       id: 1,
@@ -41,40 +66,16 @@ const portfolioData = {
       {
           id: 4,
           title: "DevOps Portfolio",
-          description: "Devops portfolio project demonstrates the deployment of a React application using Vite for efficient development and build processes. It includes configurations for ESLint to maintain code quality and Tailwind CSS for styling. The setup showcases modern front-end development practices, emphasizing performance and maintainability.",
+          description: "Devops portfolio project demonstrates the deployment of a React application using Vite for efficient development and build processes. It includes configurations for ESLint to maintain code quality and Tailwind CSS for styling.",
           link: "https://github.com/Yesh2802/devops",
           repoLink: "https://github.com/Yesh2802/devops",
           tags: ["React", "Vite", "JavaScript","Tailwind CSS", "ESLint","PostCSS","HTML","GitHub Actions"],
       },
-  ],
-    skills: [
-    { name: "Python", icon: <SiPython /> },
-    { name: "JavaScript", icon: <SiJavascript /> },
-        { name: "Java", icon: <FaJava /> },
-        { name: "C++", icon: <SiCplusplus /> },
-        { name: "Bash", icon: <SiGnubash /> },
-        { name: "Azure", icon: <VscAzure /> },
-        { name: "AWS", icon: <FaAws /> },
-        { name: "Docker", icon: <SiDocker /> },
-    { name: "Kubernetes", icon: <SiKubernetes /> },
-    { name: "Terraform", icon: <SiTerraform /> },
-    { name: "Ansible", icon: <SiAnsible /> },
-    { name: "Jenkins", icon: <SiJenkins /> },
-    { name: "GitHub Actions", icon: <SiGithubactions /> },
-    { name: "Prometheus", icon: <SiPrometheus /> },
-    { name: "Grafana", icon: <SiGrafana /> },
-    { name: "ELK Stack", icon: <SiElastic /> },
-    { name: "Vault", icon: <SiVault /> },
-        { name: "Postman/Newman", icon: <SiPostman /> },
-        { name: "Selenium", icon: <SiSelenium /> },
-        { name: "Cypress", icon: <SiCypress /> },
-        { name: "PyTest", icon: <SiPytest /> },
-        { name: "Jira", icon: <SiJira /> },
-        
-  ],
+    ],
+
   education: [
     {
-    degree: "Master of Technology in Cybersecurity and Information Assurance",
+          degree: "Masters of Science Cybersecurity and Information Assurance",
     institution: "University of Central Missouri, Lee's Summit, MO", 
         year: "2025",
     },
@@ -84,12 +85,27 @@ const portfolioData = {
       year: "2023",
     },
   ],
-  certifications: [
+    certifications: [
+        {
+            name: "API Testing and Postman Automation",
+            issuer: "Coursera",
+            year: "2024",
+        },
     {
       name: "Microsoft Technology Associate",
       issuer: "Microsoft",
-      year: "2023",
-    },
+      year: "2022",
+      },
+      {
+          name: "Cloud Computing Foundations",
+          issuer: "Google",
+          year: "2024",
+        },
+        {
+            name: "Cloud Computing Foundations",
+            issuer: "Google",
+            year: "2024",
+        }
   ],
 };
 
@@ -220,13 +236,20 @@ export default function DevOpsPortfolio() {
             </a>
           </div>
         </header>
-        
 
         <Section title="About Me" id="about">
           <p className="text-gray-300 text-lg">
             Welcome to my portfolio! I am an aspiring DevOps Engineer with a passion for automating infrastructure, streamlining deployment pipelines, and ensuring system reliability using cloud-native technologies and best practices.
           </p>
         </Section>
+
+              <Section title="Tools & Technologies" id="skills">
+                  <ul className="flex flex-wrap gap-4">
+                      {skills.map((skill) => (
+                          <SkillBadge key={skill.name} name={skill.name} icon={skill.icon} />
+                      ))}
+                  </ul>
+              </Section>
 
               <Section title="Featured Projects" id="projects">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -254,13 +277,6 @@ export default function DevOpsPortfolio() {
                   )}
               </Section>
 
-        <Section title="Tools & Technologies" id="skills">
-          <ul className="flex flex-wrap gap-4">
-            {skills.map((skill) => (
-              <SkillBadge key={skill.name} name={skill.name} icon={skill.icon} />
-            ))}
-          </ul>
-        </Section>
 
         <Section title="Education" id="education">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
