@@ -8,7 +8,7 @@ import { SiJira, SiCplusplus, SiPytest, SiCypress, SiSelenium, SiGnubash, SiJava
 const portfolioData = {
     name: "Yeshwanth Kanukuntla",
     title: "Aspiring DevOps Engineer",
-    bio: "I’m a proactive and results-driven Software Engineer with a DevOps mindset, passionate about building scalable applications, automating infrastructure, and accelerating software delivery. With hands-on experience as a graduate student, I bring a unique blend of development and operations expertise—leveraging modern tools like Kubernetes, Docker, Terraform, and cloud platforms including AWS and Azure. My strengths include designing robust CI/CD pipelines, writing clean and maintainable code, managing infrastructure as code, and implementing end-to-end observability using Prometheus and Grafana. I thrive in agile environments where I can bridge development and operations, improve system reliability, and deliver high-impact solutions through automation, collaboration, and a performance-first approach.",
+    bio: "",
     contact: {
         email: "yeshwanthkanukuntla@gmail.com",
         linkedin: "https://linkedin.com/in/kyeshwanth2802",
@@ -286,10 +286,10 @@ export default function DevOpsPortfolio() {
                 {
         <Section title="About Me" id="about">
                         <p className="text-gray-300 text-lg text-justify font-sans">
-                            I'm a results-driven Cloud & DevOps Engineer with a passion for automating infrastructure, enhancing system reliability, and accelerating software delivery. As a graduate student with hands-on experience, I specialize in building secure, scalable DevOps solutions using Kubernetes, Docker, Terraform, and cloud platforms like AWS and Azure.
-                        </p>
+                            I’m a results-driven Software Engineer with a strong DevOps foundation, passionate about designing reliable systems, writing clean code, and automating infrastructure for fast, secure software delivery. With hands-on experience as a graduate student, I specialize in developing scalable solutions using Python, JavaScript, and object-oriented programming principles, while leveraging cloud platforms like AWS and Azure.</p>
                         <p className="text-gray-300 text-lg text-justify font-sans">
-                            My strengths include architecting CI/CD pipelines, managing infrastructure as code, and implementing end-to-end monitoring with Prometheus and Grafana. I focus on bridging development and operations through automation, observability, and a performance-first mindset.
+                            I bring end-to-end expertise—from architecting CI/CD pipelines with tools like GitHub Actions and Jenkins, to managing infrastructure as code using Terraform and Ansible, and deploying containerized applications on Kubernetes and Docker. I’m also skilled in system monitoring and observability using Prometheus, Grafana, and ELK Stack.
+Driven by a performance-first mindset, I thrive in cross-functional teams where I can bridge development and operations, improve code quality and deployment speed, and contribute to building secure, resilient, and maintainable software systems.
           </p>
         </Section>
         }
