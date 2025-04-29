@@ -80,7 +80,7 @@ const portfolioData = {
             title: "Software Quality Assurance Intern",
             company: "Planon",
             location: "Hyderabad, India",
-            years: "Aug 2022 - Jul 2023",
+            years: "Aug 2022 - Aug 2023",
             description: [
                 "Developed and executed manual and automated test cases for cloud-hosted applications, ensuring functionality and reliability.",
                 "Implemented CI/CD pipelines using Jenkins and GitHub Actions to streamline deployments.",
