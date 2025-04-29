@@ -7,7 +7,7 @@ import { SiJira, SiCplusplus, SiPytest, SiCypress, SiSelenium, SiGnubash, SiJava
 // --- Data ---
 const portfolioData = {
     name: "Yeshwanth Kanukuntla",
-    title: "Aspiring DevOps Engineer",
+    title: "Aspiring Software Engineer",
     bio: "",
     contact: {
         email: "yeshwanthkanukuntla@gmail.com",
