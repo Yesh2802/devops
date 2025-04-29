@@ -286,10 +286,11 @@ export default function DevOpsPortfolio() {
                 {
         <Section title="About Me" id="about">
                         <p className="text-gray-300 text-lg text-justify font-sans">
-                            I’m a results-driven Software Engineer with a strong DevOps foundation, passionate about designing reliable systems, writing clean code, and automating infrastructure for fast, secure software delivery. With hands-on experience as a graduate student, I specialize in developing scalable solutions using Python, JavaScript, and object-oriented programming principles, while leveraging cloud platforms like AWS and Azure.</p>
+                            I’m a results-driven Software Engineer with a strong DevOps and programming foundation, passionate about designing reliable systems, writing clean code, and automating infrastructure for fast, secure software delivery. With hands-on experience as a graduate student, I specialize in developing scalable solutions using Python, JavaScript, and object-oriented programming principles, while leveraging cloud platforms like AWS and Azure.</p>
                         <p className="text-gray-300 text-lg text-justify font-sans">
                             I bring end-to-end expertise—from architecting CI/CD pipelines with tools like GitHub Actions and Jenkins, to managing infrastructure as code using Terraform and Ansible, and deploying containerized applications on Kubernetes and Docker. I’m also skilled in system monitoring and observability using Prometheus, Grafana, and ELK Stack.
-Driven by a performance-first mindset, I thrive in cross-functional teams where I can bridge development and operations, improve code quality and deployment speed, and contribute to building secure, resilient, and maintainable software systems.
+                        <p className="text-gray-300 text-lg text-justify font-sans">
+                            Driven by a performance-first mindset, I thrive in cross-functional teams where I can bridge development and operations, improve code quality and deployment speed, and contribute to building secure, resilient, and maintainable software systems.
           </p>
         </Section>
         }
