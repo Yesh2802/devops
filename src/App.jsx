@@ -8,7 +8,7 @@ import { SiJira, SiCplusplus, SiPytest, SiCypress, SiSelenium, SiGnubash, SiJava
 const portfolioData = {
     name: "Yeshwanth Kanukuntla",
     title: "Aspiring DevOps Engineer",
-    bio: "Enthusiastic and motivated fresher with a strong foundation in DevOps practices. Eager to contribute to automating infrastructure, streamlining deployment pipelines, and ensuring system reliability using cloud-native technologies and best practices.",
+    bio: "I’m a proactive and results-driven Software Engineer with a DevOps mindset, passionate about building scalable applications, automating infrastructure, and accelerating software delivery. With hands-on experience as a graduate student, I bring a unique blend of development and operations expertise—leveraging modern tools like Kubernetes, Docker, Terraform, and cloud platforms including AWS and Azure. My strengths include designing robust CI/CD pipelines, writing clean and maintainable code, managing infrastructure as code, and implementing end-to-end observability using Prometheus and Grafana. I thrive in agile environments where I can bridge development and operations, improve system reliability, and deliver high-impact solutions through automation, collaboration, and a performance-first approach.",
     contact: {
         email: "yeshwanthkanukuntla@gmail.com",
         linkedin: "https://linkedin.com/in/kyeshwanth2802",
