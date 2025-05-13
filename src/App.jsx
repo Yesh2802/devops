@@ -77,7 +77,7 @@ const portfolioData = {
     experience: [
         // Add your actual experience here. Example below:
         {
-            title: "Software Quality Assurance Intern",
+            title: "Software Engineer",
             company: "Planon",
             location: "Hyderabad, India",
             years: "Aug 2022 - Aug 2023",
@@ -89,6 +89,18 @@ const portfolioData = {
 
             ],
         },
+        {
+            title: "Software Developer",
+            company: "Indian Servers",
+            location: "Hyderabad, India",
+            years: "May 2022 - Jun 2022",
+            description: [
+                "Developed web-based modules and backend APIs using Python and JavaScript, improving platform responsiveness and modularity.",
+                "Built and maintained RESTful APIs to support user authentication, data handling, and real-time operations across distributed systems.",
+                "Built responsive and reusable front-end components using React, HTML5, and CSS3, optimizing performance and accessibility across devices.",
+                "Created SQL and NoSQL database schemas using PostgreSQL and MongoDB, ensuring efficient data modeling and retrieval."
+                ],
+        }
     ],
     education: [
         {
