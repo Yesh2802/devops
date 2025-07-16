@@ -86,7 +86,7 @@ const portfolioData = {
                 "Engineered distributed systems using microservices architecture on AWS, implementing event-driven communication patterns and ensuring fault tolerance across multiple availability zones.",
 
             ],
-        }
+        },
         {
             title: "Software Engineer",
             company: "Planon",
