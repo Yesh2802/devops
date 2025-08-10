@@ -76,19 +76,6 @@ const portfolioData = {
     experience: [
         {
             title: "Software Engineer",
-            company: "T-Mobile",
-            location: "Overland Park, Kansas",
-            years: "Dec 2023 - Present",
-            description: [
-                "Developed and deployed highly available, scalable microservices using Go, Python, and React, serving millions of daily requests for critical customer-facing applications with 99.9% uptime.",
-                "Architected RESTful APIs and real-time data processing systems handling concurrent user loads of 500K+ users,implementing efficient data modeling and caching strategies with Redis.",
-                "Built responsive web frontend components using React and TypeScript, improving user engagement metrics by 25% through enhanced UI/UX design and performance optimization.",
-                "Engineered distributed systems using microservices architecture on AWS, implementing event-driven communication patterns and ensuring fault tolerance across multiple availability zones.",
-
-            ],
-        },
-        {
-            title: "Software Engineer",
             company: "Planon",
             location: "Hyderabad, India",
             years: "Aug 2022 - Aug 2023",
