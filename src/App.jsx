@@ -76,19 +76,32 @@ const portfolioData = {
     experience: [
         {
             title: "Software Engineer",
+            company: "T-Mobile",
+            location: "Remote",
+            years: "Dec 2023 - Feb 2025",
+            description: [
+                "Architected and maintained CI/CD pipelines using Jenkins, GitLab Cl, and GitHub Actions, automating the build, test, and deployment of microservices built with Python and Go, which accelerated deployment frequency by 30%.",
+                "Developed and deployed scalable microservices using Python, Go, and Docker, serving millions of daily requests for critical customer-facing applications.",
+                "Engineered Terraform modules to manage large-scale, multi-account AWS infrastructure, enforcing security best practices and improving system reliability and cost-efficiency.",
+                "Implemented a robust observability stack with Prometheus, Grafana, and Splunk, reducing Mean Time to Resolution (MTTR) for production incidents by 25%.",
+
+            ],
+        },
+        {
+            title: "Software Engineer",
             company: "Planon",
             location: "Hyderabad, India",
             years: "Aug 2022 - Aug 2023",
             description: [
                 "Developed and executed manual and automated test cases for cloud-hosted applications, ensuring functionality and reliability.",
-                "Implemented CI/CD pipelines using Jenkins and GitHub Actions to streamline deployments.",
-                "Collaborated with security and application teams to integrate security best practices in the testing framework.",
-                "Implemented PowerShell scripts to automate configuration management and improve cloud security policies.",
+                "Monitored daily cloud-based product performance by overseeing automated tests, including manual, unit, and regression tests, triggered via TeamCity and Jenkins.",
+                "Identified, diagnosed, and resolved cloud infrastructure issues reported by cross-functional teams, thereby enhancing system reliability, performance, and availability in AWS-based environments.",
+                "Enhanced system reliability by meticulously documenting test failures in JIRA and effectively collaborating with Agile teams to swiftly resolve issues.",
 
             ],
         },
         {
-            title: "Software Developer",
+            title: "Software Engineer",
             company: "Indian Servers",
             location: "Hyderabad, India",
             years: "May 2022 - Jun 2022",
